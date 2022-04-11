@@ -193,12 +193,12 @@ local theme = lush(function()
     -- Exception      { }, --  try, catch, throw
 
     PreProc        { fg = ship_cove }, -- (preferred) generic Preprocessor
-    Include        { PreProc, gui = "italic" }, --  preprocessor #include
+    Include        { PreProc }, --  preprocessor #include
     -- Define         { }, --   preprocessor #define
     -- Macro          { }, --    same as Define
     -- PreCondit      { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = koromiko, gui="italic" }, -- (preferred) int, long, char, etc.
+    Type           { fg = koromiko }, -- (preferred) int, long, char, etc.
     -- StorageClass   { }, -- static, register, volatile, etc.
     Structure      { fg = morning_glory }, --  struct, union, enum, etc.
     -- Typedef        { }, --  A typedef
@@ -305,7 +305,7 @@ local theme = lush(function()
     -- TSTag                { };    -- Tags like html tag names.
     TSTagDelimiter       { fg = bayoux_blue };    -- Tag delimiter like `<` `>` `/`
     -- TSText               { };    -- For strings considered text in a markup language.
-    TSEmphasis           { Italic };    -- For text to be represented with emphasis.
+    TSEmphasis           { Bold };    -- For text to be represented with emphasis.
     TSUnderline          { Underlined };    -- For text to be represented with an underline.
     TSStrike             { gui="strikethrough" };    -- For strikethrough text.
     -- TSTitle              { };    -- Text that is part of a title.
