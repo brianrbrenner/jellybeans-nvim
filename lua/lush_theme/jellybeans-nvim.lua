@@ -182,7 +182,7 @@ local theme = lush(function()
     -- Float          { }, --    a floating point constant: 2.3e10
 
     Identifier     { fg = biloba_flower }, -- (preferred) any variable name
-    Function       { fg = goldenrod }, -- function name (also: methods for classes)
+    Function       { fg = goldenrod, gui="bold" }, -- function name (also: methods for classes)
 
     Statement      { fg = perano }, -- (preferred) any statement
     -- Conditional    { }, --  if, then, else, endif, switch, etc.
